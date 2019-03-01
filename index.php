@@ -25,43 +25,6 @@ if (isset($_GET['goA3'])) {
 if (isset($_GET['stopE3'])) {
     $voiture3->Stop();
 }
-$array = array(5,7,81,0,12);
- 
-$max1 =0 ;
-$max2 = 0;
- 
-for($i=0; $i<count($array); $i++)
-{
-    if($array[$i] > $max1)
-    {
-      $max2 = $max1;
-      $max1 = $array[$i];
-    }
-    else if($array[$i] > $max2)
-    {
-      $max2 = $array[$i];
-    }
-}
-echo "Maximum value = ".$max1;
-echo "<br />"; 
-echo "Second maximum Value =".$max2;
-
-echo count(explode ('/', '///'));
-echo "<br />"; 
-$a = array (1 => "A", "B", "C");
-$a[1] = "A";
-$a[] = "B";
-$a[] = "C";
-print_r($a);
-
-echo "<br />"; 
-
-function bar( $a)
-    {
-         return $a();
-    }
-
-
 
 ?>
 
